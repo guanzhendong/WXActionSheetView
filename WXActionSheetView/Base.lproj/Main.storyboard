@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEb-rm-fOt">
+                                <rect key="frame" x="251" y="100" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="F7d-pQ-jtK"/>
+                                    <constraint firstAttribute="height" constant="30" id="Xoe-tY-DA0"/>
+                                </constraints>
+                                <state key="normal" title="ShowView"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNT-JJ-6Cb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KJk-zG-ygS">
+                                <rect key="frame" x="60" y="179" width="480" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="hPz-fD-MUm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KJk-zG-ygS" secondAttribute="trailing" constant="40" id="08M-oD-bcH"/>
+                            <constraint firstItem="yEb-rm-fOt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="11R-vq-3oh"/>
+                            <constraint firstItem="KJk-zG-ygS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="22L-oa-v2T"/>
+                            <constraint firstItem="KJk-zG-ygS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GwW-6o-vX0"/>
+                            <constraint firstItem="yEb-rm-fOt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="JH8-ao-3qe"/>
+                            <constraint firstItem="KJk-zG-ygS" firstAttribute="top" secondItem="yEb-rm-fOt" secondAttribute="bottom" constant="49" id="c8E-1z-0Y4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="462"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test1.jpg" width="1938" height="1098"/>
+    </resources>
+</document>
